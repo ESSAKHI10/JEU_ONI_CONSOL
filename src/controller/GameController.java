@@ -140,9 +140,10 @@ public class GameController {
 
 		if (talon.size() == 0) {
 			view.playerMove(playerNumber, index);
-			addCardToTalon(players.get(playerNumber).getMain().removeCardX(index));
 			// verification de la carte jouer
 			NatureCarteJOuer(index);
+			addCardToTalon(players.get(playerNumber).getMain().removeCardX(index));
+		
 
 		} else {
 			// verifier si la carte choise est correspondans au cart de talon

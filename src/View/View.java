@@ -58,21 +58,18 @@ public class View {
 
 	public void player() {
 		String move;
-		System.out.println("Entrer :");
+		System.out.print("Entrer :");
 		keyboard.nextLine();
 		do {
 		
-		System.out.println("Saisir votre choix :");
+		System.out.print("Saisir votre choix (p/j):");
 		 move = keyboard.nextLine();
 		}
 	while(!move.equals("p") && !move.equals("j"))	;
 		
 		 
 //		while (move == "p" && move == "j") {
-//			System.out.println("Saisir votre choix :");
-//			move = keyboard.nextLine();
-//			System.out.println("choix memee");
-//		}
+
 		switch (move) {
 		case "p":
 			controller.piocher();
